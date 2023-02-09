@@ -23,6 +23,7 @@
                 <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
                 <x-jet-input id="password_confirmation" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
+            <x-jet-input id="user_type" type="hidden" name="user_type" value="administrator" />
         </div>
         <div class="flex items-center justify-between mt-6">
             <div class="mr-1">
@@ -33,7 +34,7 @@
             </div>
             <x-jet-button>
                 {{ __('Sign Up') }}
-            </x-jet-button>                
+            </x-jet-button>
         </div>
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
                 <div class="mt-6">
@@ -43,13 +44,13 @@
                             {!! __('I agree to the :terms_of_service and :privacy_policy', [
                                 'terms_of_service' => '<a target="_blank" href="'.route('terms.show').'" class="text-sm underline hover:no-underline">'.__('Terms of Service').'</a>',
                                 'privacy_policy' => '<a target="_blank" href="'.route('policy.show').'" class="text-sm underline hover:no-underline">'.__('Privacy Policy').'</a>',
-                            ]) !!}                        
+                            ]) !!}
                         </span>
                     </label>
                 </div>
-            @endif        
+            @endif
     </form>
-    <x-jet-validation-errors class="mt-4" />  
+    <x-jet-validation-errors class="mt-4" />
     <!-- Footer -->
     <div class="pt-5 mt-6 border-t border-slate-200">
         <div class="text-sm">

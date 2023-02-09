@@ -25,5 +25,10 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::fallback(function() {
         return view('pages/utility/404');
-    });    
+    });
+    Route::group(['middleware' => ['auth', 'role:administrator']], function() {
+        Route::get('/new_employee', [DashboardController::class,'new_employee']);
+        Route::get('/request_fundsA', \App\Http\Livewire\Admin\RequestFunds::class);
+
+    });
 });
