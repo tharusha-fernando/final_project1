@@ -243,3 +243,136 @@
         <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
     </div>
 </td>
+<input wire:model="first_name" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="First Name">
+<!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
+<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+        Last Name
+    </label>
+    <input wire:model="last_name" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Last Name">
+    <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
+</div>
+<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">Email
+    </label>
+    <input wire:model="email" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="email" placeholder="Email">
+    <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
+</div>
+<tr>
+    <td class="p-2 whitespace-nowrap">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                Date Of Birth
+            </label>
+            <input wire:model="date_of_birth" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="date" placeholder="Date Of BNirth">
+            <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
+        </div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">NIC
+            </label>
+            <input wire:model="nic" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="number" placeholder="NIC">
+            <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
+        </div>
+    </td>
+</tr>
+<tr>
+    <td class="p-2 whitespace-nowrap">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                Password
+            </label>
+            <input wire:model="password" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="password" placeholder="Password">
+            <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
+        </div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                Confirm Password
+            </label>
+            <input wire:model="password_confirmation" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="password" placeholder="Confirm Password">
+            <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
+        </div>
+    </td>
+</tr>
+<tr>
+    <td>
+        <button class="bg-emerald-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="submit">
+            Submit
+        </button>
+        <button class="bg-gray-500 hover:bg-gray-50 text-white font-bold py-2 px-4 rounded-full" type="reset">
+            Cancel
+        </button>
+    </td>
+    <!--td>
+
+    </td>
+    <td>
+
+    </td-->
+</tr>
+<div class="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white shadow-lg rounded-sm border border-slate-200">
+    <div class="px-5 pt-5">
+        <header class="flex justify-between items-start mb-2">
+            <!-- Icon -->
+            <img src="{{ asset('images/icon-01.svg') }}" width="32" height="32" alt="Icon 01" />
+            <!-- Menu button -->
+            <div class="relative inline-flex" x-data="{ open: false }">
+                <button
+                    class="text-slate-400 hover:text-slate-500 rounded-full"
+                    :class="{ 'bg-slate-100 text-slate-500': open }"
+                    aria-haspopup="true"
+                    @click.prevent="open = !open"
+                    :aria-expanded="open"
+                >
+                    <span class="sr-only">Menu</span>
+                    <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
+                        <circle cx="16" cy="16" r="2" />
+                        <circle cx="10" cy="16" r="2" />
+                        <circle cx="22" cy="16" r="2" />
+                    </svg>
+                </button>
+                <div
+                    class="origin-top-right z-10 absolute top-full right-0 min-w-36 bg-white border border-slate-200 py-1.5 rounded shadow-lg overflow-hidden mt-1"
+                    @click.outside="open = false"
+                    @keydown.escape.window="open = false"
+                    x-show="open"
+                    x-transition:enter="transition ease-out duration-200 transform"
+                    x-transition:enter-start="opacity-0 -translate-y-2"
+                    x-transition:enter-end="opacity-100 translate-y-0"
+                    x-transition:leave="transition ease-out duration-200"
+                    x-transition:leave-start="opacity-100"
+                    x-transition:leave-end="opacity-0"
+                    x-cloak
+                >
+                    <ul>
+                        <li>
+                            <a class="font-medium text-sm text-slate-600 hover:text-slate-800 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 1</a>
+                        </li>
+                        <li>
+                            <a class="font-medium text-sm text-slate-600 hover:text-slate-800 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 2</a>
+                        </li>
+                        <li>
+                            <a class="font-medium text-sm text-rose-500 hover:text-rose-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Remove</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <h2 class="text-lg font-semibold text-slate-800 mb-2">Acme Plus</h2>
+        <div class="text-xs font-semibold text-slate-400 uppercase mb-1">Sales</div>
+        <div class="flex items-start">
+            <div class="text-3xl font-bold text-slate-800 mr-2">${{ number_format($dataFeed->sumDataSet(1, 1), 0) }}</div>
+            <div class="text-sm font-semibold text-white px-1.5 bg-emerald-500 rounded-full">+49%</div>
+        </div>
+    </div>
+    <!-- Chart built with Chart.js 3 -->
+    <!-- Check out src/js/components/dashboard-card-01.js for config -->
+    <div class="grow">
+        <!-- Change the height attribute to adjust the chart height -->
+        <canvas id="dashboard-card-01" width="389" height="128"></canvas>
+    </div>
+</div>
+

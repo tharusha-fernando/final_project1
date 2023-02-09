@@ -29,6 +29,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::group(['middleware' => ['auth', 'role:administrator']], function() {
         Route::get('/new_employee', [DashboardController::class,'new_employee']);
         Route::get('/request_fundsA', \App\Http\Livewire\Admin\RequestFunds::class);
+        Route::get('/about_us', [DashboardController::class,'about_us']);
 
     });
 });

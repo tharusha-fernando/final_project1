@@ -2,6 +2,7 @@
 
     namespace App\Http\Controllers;
 
+    use Illuminate\Database\Eloquent\Model;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Auth;
     use Illuminate\Support\Facades\Http;
@@ -31,5 +32,10 @@
         public function new_employee(){
             $dataFeed = new DataFeed();
             return view('admin/new_employee', compact('dataFeed'));
+        }
+
+        public function about_us(){
+            $dataFeed = new DataFeed();
+            return view('admin/about_us', compact('dataFeed'));
         }
     }
