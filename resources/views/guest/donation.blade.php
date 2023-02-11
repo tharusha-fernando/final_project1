@@ -18,7 +18,7 @@
             <div class="col-span-full  shadow-lg rounded-sm border border-gray-200">
                 <div class="grid grid-cols-12 gap-6">
                     <div class="col-span-full  bg-white shadow-lg rounded-sm border border-gray-200">
-                        @livewire('guest.donation',['dataFeed'=>$dataFeed])
+                        @livewire('guest.donation',['id_buba'=>$id_buba])
                     </div>
                 </div>
                 <!-- break-->
