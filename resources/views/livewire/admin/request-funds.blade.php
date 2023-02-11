@@ -84,7 +84,7 @@
                             <td class="p-2 whitespace-nowrap">
                                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                                        Documents
+                                        Medical Proof
                                     </label>
                                     <input wire:model="doc_upload" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="file" placeholder="First Name">
 
@@ -101,6 +101,15 @@
                                     <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
                                 </div>
                             </td>
+                            <td class="p-2 whitespace-nowrap">
+                                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                        NIC FRONT AND BACK
+                                    </label>
+                                    <input wire:model="doc_uploadnic" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="file" placeholder="First Name">
+
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td class="p-2 whitespace-nowrap">
@@ -112,6 +121,15 @@
                                     <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
                                 </div>
                             </td>
+                            <td class="p-2 whitespace-nowrap">
+                                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                        Living Proof
+                                    </label>
+                                    <input wire:model="doc_uploadlifing" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="file" placeholder="First Name">
+
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td class="p-2 whitespace-nowrap">
@@ -121,6 +139,15 @@
                                     </label>
                                     <input wire:model="amount" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="number" placeholder="amount">
                                     <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
+                                </div>
+                            </td>
+                            <td class="p-2 whitespace-nowrap">
+                                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                        Photos Of Patient
+                                    </label>
+                                    <input wire:model="doc_uploadphotos" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="file" placeholder="First Name">
+
                                 </div>
                             </td>
                         </tr>
