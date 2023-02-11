@@ -40,6 +40,13 @@
             return view('admin/about_us', compact('dataFeed'));
         }
 
+        public function about_usUs(){
+            $dataFeed = new DataFeed();
+            $Data=\App\Models\AboutUs::all()->first();
+            $imageurl='storage/'.$Data->image_path;
+            return view('user/about_us', compact('dataFeed','Data','imageurl'));
+        }
+
         public function view_funds(){
             $Funds=Funds::where('status','approved')->get();
             //dd($Fund);

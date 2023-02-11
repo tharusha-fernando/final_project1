@@ -33,4 +33,11 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         Route::get('/view_funds', [DashboardController::class,'view_funds']);
 
     });
+    Route::group(['middleware' => ['auth', 'role:patient_user']], function() {
+        //Route::get('/new_employee', [DashboardController::class,'new_employee']);
+        //Route::get('/request_fundsA', \App\Http\Livewire\Admin\RequestFunds::class);
+        Route::get('/about_usUs', [DashboardController::class,'about_usUs']);
+        //Route::get('/view_funds', [DashboardController::class,'view_funds']);
+
+    });
 });

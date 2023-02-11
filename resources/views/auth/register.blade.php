@@ -23,7 +23,7 @@
                 <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
                 <x-jet-input id="password_confirmation" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
-            <x-jet-input id="user_type" type="hidden" name="user_type" value="administrator" />
+            <x-jet-input id="user_type" type="hidden" name="user_type" value="patient_user" />
         </div>
         <div class="flex items-center justify-between mt-6">
             <div class="mr-1">
