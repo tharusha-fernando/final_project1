@@ -375,4 +375,46 @@
         <canvas id="dashboard-card-01" width="389" height="128"></canvas>
     </div>
 </div>
-
+<tr>
+    <td class="p-2 whitespace-nowrap">
+        <div class="flex items-center">
+        <!--div class="w-10 h-10 shrink-0 mr-2 sm:mr-3">
+                                    <img class="rounded-full" src="{{ asset('images/user-36-05.jpg') }}" width="40" height="40" alt="Alex Shatov" />
+                                </div-->
+            <div class="font-medium text-gray-800">Alex Shatov</div>
+        </div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-left">alexshatov@gmail.com</div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-left font-medium text-green-500">$2,890.66</div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-lg text-center">🇺🇸</div>
+    </td>
+</tr>
+$filename
+$filename
+//$files = $request->input('files');
+$Fund=Funds::find($id_bu);
+$files=[$Fund->medical_proof,$Fund->nic_,$Fund->living_proof,$Fund->photos_of];
+//dd($files);
+foreach ($files as $file) {
+$file_path = storage_path('app/public/' . $file);
+// $filename="file";
+//break; // add this to only download one file
+$this->download_file('app/public/'.$file);
+}
+<button wire:click="download({{$Fund->id}},'medical')"  class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
+    Download Medical Proof
+</button>
+<button wire:click="download_file({{$Fund->nic_}})" class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
+    Download Nic
+</button>
+<button wire:click="download_file({{$Fund->living_proof}})" class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
+    Download Living Proof
+</button>
+<button wire:click="download_file({{$Fund->photos_of}})" class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
+    Download Photos
+</button>

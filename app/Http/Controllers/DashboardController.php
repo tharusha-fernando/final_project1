@@ -38,4 +38,9 @@
             $dataFeed = new DataFeed();
             return view('admin/about_us', compact('dataFeed'));
         }
+
+        public function view_funds(){
+            $dataFeed = new DataFeed();
+            return view('admin/view_funds', compact('dataFeed'));
+        }
     }
