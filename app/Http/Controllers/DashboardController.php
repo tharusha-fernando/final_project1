@@ -47,6 +47,37 @@
             return view('user/about_us', compact('dataFeed','Data','imageurl'));
         }
 
+
+        public function about_usgu(){
+            $dataFeed = new DataFeed();
+            $Data=\App\Models\AboutUs::all()->first();
+            $imageurl='storage/'.$Data->image_path;
+            return view('guest/about_us', compact('dataFeed','Data','imageurl'));
+        }
+
+        public function donate(){
+            $dataFeed = new DataFeed();
+            //$Data=\App\Models\AboutUs::all()->first();
+            //$imageurl='storage/'.$Data->image_path;
+            return view('guest/donate', compact('dataFeed'));
+        }
+
+        public function donation($id_buba){
+            $dataFeed = new DataFeed();
+            //$Data=\App\Models\AboutUs::all()->first();
+            //$imageurl='storage/'.$Data->image_path;
+            return view('guest/donation', compact('dataFeed','id_buba'));
+        }
+
+
+
+
+
+        public function guest(){
+            $dataFeed = new DataFeed();
+            return view('guest/dashboard', compact('dataFeed'));
+        }
+
         public function view_funds(){
             $Funds=Funds::where('status','approved')->get();
             //dd($Fund);

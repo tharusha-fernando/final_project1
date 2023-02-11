@@ -16,6 +16,10 @@ use App\Http\Controllers\DashboardController;
 */
 
 Route::redirect('/', 'login');
+Route::get('/guest', [DashboardController::class, 'guest']);
+Route::get('/about_usgu', [DashboardController::class,'about_usgu']);
+Route::get('/donate', [DashboardController::class,'donate']);
+Route::get('/donation/{id}', [DashboardController::class,'donation']);
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
@@ -28,15 +32,16 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     });
     Route::group(['middleware' => ['auth', 'role:administrator']], function() {
         Route::get('/new_employee', [DashboardController::class,'new_employee']);
-        Route::get('/request_fundsA', \App\Http\Livewire\Admin\RequestFunds::class);
+        //Route::get('/request_fundsA', \App\Http\Livewire\Admin\RequestFunds::class);
         Route::get('/about_us', [DashboardController::class,'about_us']);
         Route::get('/view_funds', [DashboardController::class,'view_funds']);
 
     });
-    Route::group(['middleware' => ['auth', 'role:patient_user']], function() {
+    Route::group(['middleware' => ['auth', 'role:patient_user|administrator']], function() {
         //Route::get('/new_employee', [DashboardController::class,'new_employee']);
         //Route::get('/request_fundsA', \App\Http\Livewire\Admin\RequestFunds::class);
         Route::get('/about_usUs', [DashboardController::class,'about_usUs']);
+        Route::get('/request_fundsA', \App\Http\Livewire\Admin\RequestFunds::class);
         //Route::get('/view_funds', [DashboardController::class,'view_funds']);
 
     });
