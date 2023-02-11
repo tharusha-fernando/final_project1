@@ -10,7 +10,7 @@ use Livewire\WithFileUploads;
 class RequestFunds extends Component
 {
     use WithFileUploads;
-    public $name,$description,$email,$nic,$doc_upload,$age,$contact,$amount,$doc_uploadnic,$doc_uploadlifing,$doc_uploadphotos;
+    public $name,$description,$email,$nic,$doc_upload,$age,$contact,$type,$amount,$doc_uploadnic,$doc_uploadlifing,$doc_uploadphotos;
 
     public function add_funds(){
         //dd($this->doc_upload);
@@ -28,12 +28,14 @@ class RequestFunds extends Component
             'nic'=>'required|numeric',
             'age'=>'required|numeric',
             'amount'=>'required|numeric',
+            'type'=>'required',
             //'nic'=>'sometimes|numeric',
         ]);
         $Funds=new Funds();
         $Funds->name=$this->name;
         $Funds->age=$this->age;
         $Funds->nic=$this->nic;
+        $Funds->type=$this->type;
         $Funds->contact=$this->contact;
         $Funds->email=$this->email;
         $Funds->description=$this->description;

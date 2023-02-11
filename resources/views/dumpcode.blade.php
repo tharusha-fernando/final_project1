@@ -418,3 +418,102 @@ $this->download_file('app/public/'.$file);
 <button wire:click="download_file({{$Fund->photos_of}})" class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
     Download Photos
 </button>
+<tr>
+    <td class="p-2 whitespace-nowrap">
+        <div class="flex items-center">
+            <div class="w-10 h-10 shrink-0 mr-2 sm:mr-3">
+                <img class="rounded-full" src="{{ asset('images/user-36-06.jpg') }}" width="40" height="40" alt="Philip Harbach" />
+            </div>
+            <div class="font-medium text-gray-800">Philip Harbach</div>
+        </div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-left">philip.h@gmail.com</div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-left font-medium text-green-500">$2,767.04</div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-lg text-center">🇩🇪</div>
+    </td>
+</tr>
+<tr>
+    <td class="p-2 whitespace-nowrap">
+        <div class="flex items-center">
+            <div class="w-10 h-10 shrink-0 mr-2 sm:mr-3">
+                <img class="rounded-full" src="{{ asset('images/user-36-07.jpg') }}" width="40" height="40" alt="Mirko Fisuk" />
+            </div>
+            <div class="font-medium text-gray-800">Mirko Fisuk</div>
+        </div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-left">mirkofisuk@gmail.com</div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-left font-medium text-green-500">$1,220.66</div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-lg text-center">🇫🇷</div>
+    </td>
+</tr>
+<tr>
+    <td class="p-2 whitespace-nowrap">
+        <div class="flex items-center">
+            <div class="w-10 h-10 shrink-0 mr-2 sm:mr-3">
+                <img class="rounded-full" src="{{ asset('images/user-36-08.jpg') }}" width="40" height="40" alt="Burak Long" />
+            </div>
+            <div class="font-medium text-gray-800">Burak Long</div>
+        </div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-left">longburak@gmail.com</div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-left font-medium text-green-500">$1,890.66</div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-lg text-center">🇬🇧</div>
+    </td>
+</tr>
+<tr>
+    <td class="p-2 whitespace-nowrap">
+        <div class="flex items-center">
+            <div class="w-10 h-10 shrink-0 mr-2 sm:mr-3">
+                <img class="rounded-full" src="{{ asset('images/user-36-09.jpg') }}" width="40" height="40" alt="Alex Shatov" />
+            </div>
+            <div class="font-medium text-gray-800">Alex Shatov</div>
+        </div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-left">alexshatov@gmail.com</div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-left font-medium text-green-500">$2,890.66</div>
+    </td>
+    <td class="p-2 whitespace-nowrap">
+        <div class="text-lg text-center">🇺🇸</div>
+    </td>
+</tr>
+<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+        Upload These Information As A One Ducument
+    </label>
+    <p>
+        Medical Proof<br>
+        Nic Front And Back<br>
+        Living Proof - Water And Current Bill<br>
+        Phostos Of Patient<br>
+    </p>
+</div>
+<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+        Upload These Information As A One Ducument
+    </label>
+    <p>
+        Medical Proof<br>
+        Nic Front And Back<br>
+        Living Proof - Water And Current Bill<br>
+        Phostos Of Patient<br>
+    </p>
+</div>
+

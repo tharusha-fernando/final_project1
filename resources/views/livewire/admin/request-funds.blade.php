@@ -59,15 +59,22 @@
                             <td class="p-2 whitespace-nowrap">
                                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                                        Upload These Information As A One Ducument
+                                        Type
                                     </label>
-                                    <p>
-                                        Medical Proof<br>
-                                        Nic Front And Back<br>
-                                        Living Proof - Water And Current Bill<br>
-                                        Phostos Of Patient<br>
-                                    </p>
+                                    <div class="relative">
+                                        <select wire:model="type" class="block appearance-none block w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                            <option value="Operation">Operation</option>
+                                            <option value="Medical_Equipment">Medical Equipment</option>
+                                            <option value="Medicine">Medicine</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293l-3. 087 3. 087L20. 707 9. 293z"/></svg>
+                                        </div>
+                                    </div>
                                 </div>
+
+
                             </td>
 
 
