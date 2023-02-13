@@ -47,6 +47,10 @@ class ViewFunds extends Component
         return response()->download($file_path);
     }
 
+    public function download_redirect($id_bu){
+        return $this->redirect('/edit_funds/'.$id_bu);
+    }
+
     public function render()
     {
         return view('livewire.admin.view-funds');

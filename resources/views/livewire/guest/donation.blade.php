@@ -1,52 +1,54 @@
 <div>
     {{-- The Master doesn't talk, he acts. --}}
-    <div class="col-span-full xl:col-span-6 bg-white shadow-lg rounded-sm border border-gray-200">
-        <div>
-            <div class="h-3 relative max-w-xl rounded-full overflow-hidden">
-                <div class="w-full h-full bg-gray-200 absolute"></div>
-                <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
-            </div>
-
-            <script>
-                let progress = 0;
-                let invervalSpeed = 10;
-                let incrementSpeed = 1;
-                document.addEventListener("DOMContentLoaded", function(){
-                    let bar = document.getElementById('bar');
-                    progressInterval = setInterval(function(){
-                        progress += incrementSpeed;
-                        bar.style.width = progress + "%";
-                        if(progress >= {{$percentage}}){
-                            clearInterval(progressInterval);
-                        }
-                    }, invervalSpeed);
-                });
-            </script>
+    <div class="mb-4">
+        <label class="block m-auto text-center inline-block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+            Funds Required : LKR {{$Funds->amount}} <br>
+            Funds Recieed : LKR {{$Tot_donations}}
+        </label>
+        <div class="h-3 relative rounded-full overflow-hidden">
+            <div class="w-full h-full bg-gray-200 absolute"></div>
+            <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
         </div>
+
+        <script>
+            let progress = 0;
+            let invervalSpeed = 10;
+            let incrementSpeed = 1;
+            document.addEventListener("DOMContentLoaded", function(){
+                let bar = document.getElementById('bar');
+                progressInterval = setInterval(function(){
+                    progress += incrementSpeed;
+                    bar.style.width = progress + "%";
+                    if(progress >= {{$percentage}}){
+                        clearInterval(progressInterval);
+                    }
+                }, invervalSpeed);
+            });
+        </script>
+    </div>
+    <div class="col-span-full xl:col-span-6 bg-white shadow-lg rounded-sm border border-gray-200">
         @if($paymentstatus=='first')
             <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
                 <div class="flex flex-col pb-3">
-                    <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
-                    <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
-                        Select
+                    <button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                        Transfer Money With A Bank Deposit
                     </button>
                 </div>
                 <div class="flex flex-col py-3">
-                    <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
-                    <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
-                       Select
+                    <button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                        Transfer Money With PayPal
                     </button>
                 </div>
                 <div class="flex flex-col pt-3">
-                    <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
-                    <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
-                        Select
+
+                    <button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                        Transfer Money With Courier Pickup
                     </button>
                 </div>
                 <div class="flex flex-col pt-3">
-                    <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
-                    <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
-                        Select
+
+                    <button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                        Transfer Money With Courier Through Credit Debit Card
                     </button>
                 </div>
             </dl>

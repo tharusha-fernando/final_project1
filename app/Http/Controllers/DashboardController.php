@@ -2,6 +2,7 @@
 
     namespace App\Http\Controllers;
 
+    use App\Models\Donations;
     use App\Models\Funds;
     use Illuminate\Database\Eloquent\Model;
     use Illuminate\Http\Request;
@@ -47,6 +48,11 @@
             return view('user/about_us', compact('dataFeed','Data','imageurl'));
         }
 
+        public function contact_us(){
+            $dataFeed = new DataFeed();
+            return view('guest/contact_us', compact('dataFeed'));
+        }
+
 
         public function about_usgu(){
             $dataFeed = new DataFeed();
@@ -80,6 +86,7 @@
 
         public function view_funds(){
             $Funds=Funds::where('status','approved')->get();
+            $Donations=Donations::all();
             //dd($Fund);
             $totalOP_req=0;
             $totalOP_res=0;
@@ -101,6 +108,19 @@
                 }
                 //$total_req=+$Fund->amount;
             }
+            foreach ($Donations as $Donation){
+                //dd($Donation->Funds->type);
+                if ($Donation->Funds->type=="Operation"){
+                    //dd($Donation->Funds->type);
+                    $totalOP_res+=$Donation->amount;
+                }elseif ($Donation->Funds->type=="Medical_Equipment"){
+                    $totalMeq_res+=$Donation->amount;
+                }elseif ($Donation->Funds->type=="Medicine"){
+                    $totalMed_res+=$Donation->amount;
+                }elseif($Donation->Funds->type=="Other"){
+                    $totalOt_res+=$Donation->amount;
+                }
+            }
             //dd($total_req);
 
             $dataFeed = new DataFeed();
@@ -108,4 +128,6 @@
                 'totalMed_req','totalMed_res','totalMeq_req','totalMeq_res','totalOt_req','totalOt_res'));
             //->with('total_req',$total_req)->with('total_res',$total_res)
         }
+
+
     }

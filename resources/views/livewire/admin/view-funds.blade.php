@@ -109,9 +109,12 @@
                                    Approve
                                 </button>
                                 <br>
-                                <button wire:click="download({{$Fund->id}})" class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
-                                    Download Documents
-                                </button>
+                                @if(\Illuminate\Support\Facades\Auth::user()->hasRole('administrator'))
+                                    <button wire:click="download_redirect({{$Fund->id}})" class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
+                                        <!--Download Documents-->
+                                        Edit Funds
+                                    </button>
+                                    @endif
                             </td>
                         </tr>
                     @endforeach

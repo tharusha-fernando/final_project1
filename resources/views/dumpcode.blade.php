@@ -1843,9 +1843,883 @@ $this->download_file('app/public/'.$file);
                     </label>
                     <input wire:model="account_numb" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Last Name">
                     <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
-                </div>
+                </div>  <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-200 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-200 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-200 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-200 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-200 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-200 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-200 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-200 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pb-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With A Bank Deposit</dd><button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money With A Bank Deposit
+                        </button>
+                    </div>
+                    <div class="flex flex-col py-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">PayPal</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With PayPal</dd><button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Courier Pickup</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Pickup</dd><button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Credit Debit Cards</dt>
+                        <dd class="text-lg font-semibold">Transfer Money With Courier Through Credit Debit Card</dd><button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Select
+                        </button>
+                    </div>
+                </dl>
+                <td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Update Image
+                        </label>
+                        <input wire:model="doc_upload" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="file" placeholder="First Name">
 
-                    <a class="block text-slate-400 hover:text-slate-200 transition duration-150 truncate" href="{{ route('logout') }}" @click.prevent="$root.submit();">
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Update Image
+                        </label>
+                        <input wire:model="doc_upload" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="file" placeholder="First Name">
+
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Update Image
+                        </label>
+                        <input wire:model="doc_upload" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="file" placeholder="First Name">
+
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Update Image
+                        </label>
+                        <input wire:model="doc_upload" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="file" placeholder="First Name">
+
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Update Image
+                        </label>
+                        <input wire:model="doc_upload" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="file" placeholder="First Name">
+
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Update Image
+                        </label>
+                        <input wire:model="doc_upload" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="file" placeholder="First Name">
+
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Update Image
+                        </label>
+                        <input wire:model="doc_upload" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="file" placeholder="First Name">
+
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Update Image
+                        </label>
+                        <input wire:model="doc_upload" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="file" placeholder="First Name">
+
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Update Image
+                        </label>
+                        <input wire:model="doc_upload" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="file" placeholder="First Name">
+
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <!-- Icon -->
+                    <!--img src="asseageurl)}}" widt{h{="200" height="200" /-->
+                    <!-- Menu button -->
+
+                </td><td class="p-2 whitespace-nowrap">
+                    <!-- Icon -->
+                    <!--img src="asseageurl)}}" widt{h{="200" height="200" /-->
+                    <!-- Menu button -->
+
+                </td><td class="p-2 whitespace-nowrap">
+                    <!-- Icon -->
+                    <!--img src="asseageurl)}}" widt{h{="200" height="200" /-->
+                    <!-- Menu button -->
+
+                </td><td class="p-2 whitespace-nowrap">
+                    <!-- Icon -->
+                    <!--img src="asseageurl)}}" widt{h{="200" height="200" /-->
+                    <!-- Menu button -->
+
+                </td><td class="p-2 whitespace-nowrap">
+                    <!-- Icon -->
+                    <!--img src="asseageurl)}}" widt{h{="200" height="200" /-->
+                    <!-- Menu button -->
+
+                </td><td class="p-2 whitespace-nowrap">
+                    <!-- Icon -->
+                    <!--img src="asseageurl)}}" widt{h{="200" height="200" /-->
+                    <!-- Menu button -->
+
+                </td><td class="p-2 whitespace-nowrap">
+                    <!-- Icon -->
+                    <!--img src="asseageurl)}}" widt{h{="200" height="200" /-->
+                    <!-- Menu button -->
+
+                </td><td class="p-2 whitespace-nowrap">
+                    <!-- Icon -->
+                    <!--img src="asseageurl)}}" widt{h{="200" height="200" /-->
+                    <!-- Menu button -->
+
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td><td class="p-2 whitespace-nowrap">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            About Us
+                        </label>
+                        <textarea wire:model="about_us" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+                    </div>
+                </td>
+
+                <a class="block text-slate-400 hover:text-slate-200 transition duration-150 truncate" href="{{ route('logout') }}" @click.prevent="$root.submit();">
                         <span class="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Sign Up</span>
                     </a>
                 </form>
