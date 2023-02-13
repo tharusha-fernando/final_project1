@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Donations extends Model
 {
     use HasFactory;
+
+    public function Funds(){
+        return $this->hasOne(Funds::class);
+    }
 }
