@@ -5,9 +5,11 @@ namespace App\Http\Livewire\Admin;
 use App\Models\Funds;
 use Illuminate\Database\Eloquent\Model;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class EditFunds extends Component
 {
+    use WithFileUploads;
     public $Funds,$name,$description,$email,$nic,$doc_upload,$age,$contact,$type,$amount,$doc_uploadnic,$doc_uploadlifing,$doc_uploadphotos;
     public function mount($id_bu){
         //dd($id_bu);

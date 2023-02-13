@@ -19,7 +19,7 @@ class AboutUs extends Component
         if (!is_null($this->Data)){
             $this->about_us=$this->Data->about_us;
             $this->vision=$this->Data->vision;
-            $this->doc_upload=$this->Data->image_path;
+            //$this->doc_upload=$this->Data->image_path;
             $this->our_achivemnetns=$this->Data->our_achievmnets;
             $this->imageurl="storage/".$this->Data->image_path;
 
@@ -32,7 +32,7 @@ class AboutUs extends Component
         $validatedData = $this->validate([
             'about_us'=> 'required|string',
             'vision'=> 'required|string',
-            'doc_upload'=>'required',
+            'doc_upload'=>'sometimes',
             'our_achivemnetns'=>'required|string',
             //'password_confirmation'=>$this->passwordRules(),
            // 'mobile_number'=>'sometimes|numeric',
@@ -40,7 +40,7 @@ class AboutUs extends Component
             // 'nic'=>'sometimes|numeric',
             //'nic'=>'sometimes|numeric',
         ]);
-
+        //dd($this->about_us);
         if (!is_null($this->Data)){
             $this->Data->about_us=$this->about_us;
             $this->Data->vision=$this->vision;
@@ -48,8 +48,9 @@ class AboutUs extends Component
                 $filepath=$this->doc_upload->store('images','public');
                 //dd($filepath);
                 //$Funds->file_path=$filepath;
+                $this->Data->image_path=$filepath;
             }
-            $this->Data->image_path=$filepath;
+
             $this->Data->our_achievmnets=$this->our_achivemnetns;
             $this->Data->save();
             $this->mount();

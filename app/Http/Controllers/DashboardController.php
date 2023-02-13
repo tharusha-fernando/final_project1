@@ -2,6 +2,7 @@
 
     namespace App\Http\Controllers;
 
+    use App\Models\ContactUs;
     use App\Models\Donations;
     use App\Models\Funds;
     use Illuminate\Database\Eloquent\Model;
@@ -49,8 +50,9 @@
         }
 
         public function contact_us(){
+            $Data=ContactUs::all()->first();
             $dataFeed = new DataFeed();
-            return view('guest/contact_us', compact('dataFeed'));
+            return view('guest/contact_us', compact('dataFeed','Data'));
         }
 
 
