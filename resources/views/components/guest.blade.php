@@ -34,12 +34,18 @@
 <!-- Page wrapper -->
 <div class="flex h-screen overflow-hidden">
 
-    <x-app.guest_sidebar />
+    @if(\Illuminate\Support\Facades\Auth::check())
+        <x-app.sidebar />
+    @else
+        <x-app.guest_sidebar />
+    @endif
 
     <!-- Content area -->
     <div class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden @if($attributes['background']){{ $attributes['background'] }}@endif" x-ref="contentarea">
 
-
+        @if(\Illuminate\Support\Facades\Auth::check())
+            <x-app.header />
+        @endif
 
         <main>
             {{ $slot }}

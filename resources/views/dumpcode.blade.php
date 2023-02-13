@@ -7149,8 +7149,255 @@ $this->download_file('app/public/'.$file);
 
                     </div>
                 </x-guest>
+                <!-- Line chart (Acme Plus) -->
+                <x-dashboard.dashboard-card-01 :dataFeed="$dataFeed" />
 
+                <!-- Line chart (Acme Advanced) -->
+                <x-dashboard.dashboard-card-02 :dataFeed="$dataFeed" />
 
+                <!-- Line chart (Acme Professional) -->
+                <x-dashboard.dashboard-card-03 :dataFeed="$dataFeed" />
+
+                <!-- Bar chart (Direct vs Indirect) -->
+                <x-dashboard.dashboard-card-04 />
+
+                <!-- Line chart (Real Time Value) -->
+                <x-dashboard.dashboard-card-05 />
+
+                <!-- Doughnut chart (Top Countries) -->
+                <x-dashboard.dashboard-card-06 />
+
+                <!-- Table (Top Channels) -->
+                <x-dashboard.dashboard-card-07 />
+
+                <!-- Line chart (Sales Over Time)  -->
+                <x-dashboard.dashboard-card-08 />
+
+                <!-- Stacked bar chart (Sales VS Refunds) -->
+                <x-dashboard.dashboard-card-09 />
+
+                <!-- Card (Customers)  -->
+                <x-dashboard.dashboard-card-10 />
+
+                <!-- Card (Reasons for Refunds)   -->
+                <x-dashboard.dashboard-card-11 />
+
+                <!-- Card (Recent Activity) -->
+                <x-dashboard.dashboard-card-12 />
+
+                <!-- Card (Income/Expenses) -->
+                <x-dashboard.dashboard-card-13 /> <!-- Line chart (Acme Plus) -->
+                <x-dashboard.dashboard-card-01 :dataFeed="$dataFeed" />
+
+                <!-- Line chart (Acme Advanced) -->
+                <x-dashboard.dashboard-card-02 :dataFeed="$dataFeed" />
+
+                <!-- Line chart (Acme Professional) -->
+                <x-dashboard.dashboard-card-03 :dataFeed="$dataFeed" />
+
+                <!-- Bar chart (Direct vs Indirect) -->
+                <x-dashboard.dashboard-card-04 />
+
+                <!-- Line chart (Real Time Value) -->
+                <x-dashboard.dashboard-card-05 />
+
+                <!-- Doughnut chart (Top Countries) -->
+                <x-dashboard.dashboard-card-06 />
+
+                <!-- Table (Top Channels) -->
+                <x-dashboard.dashboard-card-07 />
+
+                <!-- Line chart (Sales Over Time)  -->
+                <x-dashboard.dashboard-card-08 />
+
+                <!-- Stacked bar chart (Sales VS Refunds) -->
+                <x-dashboard.dashboard-card-09 />
+
+                <!-- Card (Customers)  -->
+                <x-dashboard.dashboard-card-10 />
+
+                <!-- Card (Reasons for Refunds)   -->
+                <x-dashboard.dashboard-card-11 />
+
+                <!-- Card (Recent Activity) -->
+                <x-dashboard.dashboard-card-12 />
+
+                <!-- Card (Income/Expenses) -->
+                <x-dashboard.dashboard-card-13 /> <!-- Line chart (Acme Plus) -->
+                <x-dashboard.dashboard-card-01 :dataFeed="$dataFeed" />
+
+                <!-- Line chart (Acme Advanced) -->
+                <x-dashboard.dashboard-card-02 :dataFeed="$dataFeed" />
+
+                <!-- Line chart (Acme Professional) -->
+                <x-dashboard.dashboard-card-03 :dataFeed="$dataFeed" />
+
+                <!-- Bar chart (Direct vs Indirect) -->
+                <x-dashboard.dashboard-card-04 />
+
+                <!-- Line chart (Real Time Value) -->
+                <x-dashboard.dashboard-card-05 />
+
+                <!-- Doughnut chart (Top Countries) -->
+                <x-dashboard.dashboard-card-06 />
+
+                <!-- Table (Top Channels) -->
+                <x-dashboard.dashboard-card-07 />
+
+                <!-- Line chart (Sales Over Time)  -->
+                <x-dashboard.dashboard-card-08 />
+
+                <!-- Stacked bar chart (Sales VS Refunds) -->
+                <x-dashboard.dashboard-card-09 />
+
+                <!-- Card (Customers)  -->
+                <x-dashboard.dashboard-card-10 />
+
+                <!-- Card (Reasons for Refunds)   -->
+                <x-dashboard.dashboard-card-11 />
+
+                <!-- Card (Recent Activity) -->
+                <x-dashboard.dashboard-card-12 />
+
+                <!-- Card (Income/Expenses) -->
+                <x-dashboard.dashboard-card-13 /> <!-- Line chart (Acme Plus) -->
+                <x-dashboard.dashboard-card-01 :dataFeed="$dataFeed" />
+
+                <!-- Line chart (Acme Advanced) -->
+                <x-dashboard.dashboard-card-02 :dataFeed="$dataFeed" />
+
+                <!-- Line chart (Acme Professional) -->
+                <x-dashboard.dashboard-card-03 :dataFeed="$dataFeed" />
+
+                <!-- Bar chart (Direct vs Indirect) -->
+                <x-dashboard.dashboard-card-04 />
+
+                <!-- Line chart (Real Time Value) -->
+                <x-dashboard.dashboard-card-05 />
+
+                <!-- Doughnut chart (Top Countries) -->
+                <x-dashboard.dashboard-card-06 />
+
+                <!-- Table (Top Channels) -->
+                <x-dashboard.dashboard-card-07 />
+
+                <!-- Line chart (Sales Over Time)  -->
+                <x-dashboard.dashboard-card-08 />
+
+                <!-- Stacked bar chart (Sales VS Refunds) -->
+                <x-dashboard.dashboard-card-09 />
+
+                <!-- Card (Customers)  -->
+                <x-dashboard.dashboard-card-10 />
+
+                <!-- Card (Reasons for Refunds)   -->
+                <x-dashboard.dashboard-card-11 />
+
+                <!-- Card (Recent Activity) -->
+                <x-dashboard.dashboard-card-12 />
+
+                <!-- Card (Income/Expenses) -->
+                <x-dashboard.dashboard-card-13 /> <!-- Line chart (Acme Plus) -->
+                <x-dashboard.dashboard-card-01 :dataFeed="$dataFeed" />
+
+                <!-- Line chart (Acme Advanced) -->
+                <x-dashboard.dashboard-card-02 :dataFeed="$dataFeed" />
+
+                <!-- Line chart (Acme Professional) -->
+                <x-dashboard.dashboard-card-03 :dataFeed="$dataFeed" />
+
+                <!-- Bar chart (Direct vs Indirect) -->
+                <x-dashboard.dashboard-card-04 />
+
+                <!-- Line chart (Real Time Value) -->
+                <x-dashboard.dashboard-card-05 />
+
+                <!-- Doughnut chart (Top Countries) -->
+                <x-dashboard.dashboard-card-06 />
+
+                <!-- Table (Top Channels) -->
+                <x-dashboard.dashboard-card-07 />
+
+                <!-- Line chart (Sales Over Time)  -->
+                <x-dashboard.dashboard-card-08 />
+
+                <!-- Stacked bar chart (Sales VS Refunds) -->
+                <x-dashboard.dashboard-card-09 />
+
+                <!-- Card (Customers)  -->
+                <x-dashboard.dashboard-card-10 />
+
+                <!-- Card (Reasons for Refunds)   -->
+                <x-dashboard.dashboard-card-11 />
+
+                <!-- Card (Recent Activity) -->
+                <x-dashboard.dashboard-card-12 />
+
+                <!-- Card (Income/Expenses) -->
+                <x-dashboard.dashboard-card-13 />
+                <!-- Filter button -->
+                <x-dropdown-filter align="right" />
+
+                <!-- Datepicker built with flatpickr -->
+                <x-datepicker />
+                <!-- Filter button -->
+                <x-dropdown-filter align="right" />
+
+                <!-- Datepicker built with flatpickr -->
+                <x-datepicker />
+                <!-- Filter button -->
+                <x-dropdown-filter align="right" />
+
+                <!-- Datepicker built with flatpickr -->
+                <x-datepicker />
+                <!-- Filter button -->
+                <x-dropdown-filter align="right" />
+
+                <!-- Datepicker built with flatpickr -->
+                <x-datepicker />
+                <!-- Filter button -->
+                <x-dropdown-filter align="right" />
+
+                <!-- Datepicker built with flatpickr -->
+                <x-datepicker />
+                <!-- Filter button -->
+                <x-dropdown-filter align="right" />
+
+                <!-- Datepicker built with flatpickr -->
+                <x-datepicker />
+                <!-- Filter button -->
+                <x-dropdown-filter align="right" />
+
+                <!-- Datepicker built with flatpickr -->
+                <x-datepicker />
+                <!-- Filter button -->
+                <x-dropdown-filter align="right" />
+
+                <!-- Datepicker built with flatpickr -->
+                <x-datepicker />
+                <x-datepicker />
+                <x-datepicker />
+                <x-datepicker />
+                <x-datepicker />
+                <x-datepicker />
+                <x-datepicker />
+                <x-datepicker />
+                <!-- Welcome banner -->
+                <x-dashboard.welcome-banner />  <!-- Welcome banner -->
+                <x-dashboard.welcome-banner />
+                <x-dashboard.welcome-banner />
+                <x-dashboard.welcome-banner />
+                <x-dashboard.welcome-banner />
+                <x-dashboard.welcome-banner />
+                <x-dashboard.welcome-banner />
+                <x-dashboard.welcome-banner />
+                <x-dashboard.welcome-banner />
+                <x-dashboard.welcome-banner />
+                <x-dashboard.welcome-banner />
+                <x-dashboard.welcome-banner />
+                <x-dashboard.welcome-banner />
+                <x-dashboard.welcome-banner />
+                <x-dashboard.welcome-banner />
                 <a class="block text-slate-400 hover:text-slate-200 transition duration-150 truncate" href="{{ route('logout') }}" @click.prevent="$root.submit();">
                         <span class="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Sign Up</span>
                     </a>

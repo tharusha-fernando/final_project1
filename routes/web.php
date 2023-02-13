@@ -14,9 +14,9 @@ use App\Http\Controllers\DashboardController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::redirect('/', 'login');
-Route::get('/guest', [DashboardController::class, 'guest']);
+Route::get('/', [DashboardController::class, 'guest']);
+//Route::redirect('/', 'login');
+//Route::get('/guest', [DashboardController::class, 'guest']);
 Route::get('/about_usgu', [DashboardController::class,'about_usgu']);
 Route::get('/donate', [DashboardController::class,'donate']);
 Route::get('/donation/{id}', [DashboardController::class,'donation']);

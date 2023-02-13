@@ -26,7 +26,13 @@
             if (Auth::user()->hasRole('administrator')){
                 return view('admin/dashboard', compact('dataFeed'));
             }elseif(Auth::user()->hasRole('patient_user')){
-                return view('user/dashboard', compact('dataFeed'));
+               // return view('user/dashboard', compact('dataFeed'));
+                $dataFeed = new DataFeed();
+                $Data=\App\Models\AboutUs::all()->first();
+                $imageurl='storage/'.$Data->image_path;
+                return view('user/about_us', compact('dataFeed','Data','imageurl'));
+            }elseif (Auth::user()->hasRole('employee')){
+                return view('admin/dashboard', compact('dataFeed'));
             }
 
             //return view('pages/dashboard/dashboard', compact('dataFeed'));
@@ -83,7 +89,11 @@
 
         public function guest(){
             $dataFeed = new DataFeed();
-            return view('guest/dashboard', compact('dataFeed'));
+            $Data=\App\Models\AboutUs::all()->first();
+            $imageurl='storage/'.$Data->image_path;
+            return view('guest/about_us', compact('dataFeed','Data','imageurl'));
+            //$dataFeed = new DataFeed();
+            //return view('guest/dashboard', compact('dataFeed'));
         }
 
         public function view_funds(){
