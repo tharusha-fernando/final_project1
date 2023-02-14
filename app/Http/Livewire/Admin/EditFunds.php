@@ -77,6 +77,12 @@ class EditFunds extends Component
         $this->mount($this->Funds->id);
         session()->flash('message_customer', 'Request has been Updated successfully');
     }
+    public function delete_funds(){
+        $Funds=$this->Funds;
+        //dd($Funds);
+        $Funds->delete();
+        return $this->redirect('/view_funds');
+    }
     public function render()
     {
         return view('livewire.admin.edit-funds');
