@@ -107,13 +107,13 @@
                                 </div>
                             </td>
                             <td>
-                                @if($Fund->status!='approved')
-                                    <button wire:click="approve({{$Fund->id}})" class="bg-emerald-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
-                                        Approve
-                                    </button>
-                                @endif
-                                <br>
-                                @if(\Illuminate\Support\Facades\Auth::user()->hasRole('administrator'))
+                                @if(\Illuminate\Support\Facades\Auth::user()->hasRole('administrator')||\Illuminate\Support\Facades\Auth::user()->hasRole('employee'))
+                                    @if($Fund->status!='approved')
+                                        <button wire:click="approve({{$Fund->id}})" class="bg-emerald-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                                            Approve
+                                        </button>
+                                    @endif
+                                    <br>
                                     <button wire:click="download_redirect({{$Fund->id}})" class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
                                         <!--Download Documents-->
                                         Edit Funds

@@ -168,9 +168,11 @@
                                                 <button class="bg-gray-500 hover:bg-gray-50 text-white font-bold py-2 px-4 rounded-full" type="reset">
                                                     Cancel
                                                 </button>
-                                                <button wire:click="delete_funds" onclick="return confirm('Are You Sure??')" class="bg-red-600 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full" type="reset">
-                                                    Delete
-                                                </button>
+                                                @if(\Illuminate\Support\Facades\Auth::user()->hasRole('administrator'))
+                                                    <button wire:click="delete_funds" onclick="return confirm('Are You Sure??')" class="bg-red-600 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full" type="reset">
+                                                        Delete
+                                                    </button>
+                                                @endif
                                             </td>
                                             <!--td>
 

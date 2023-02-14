@@ -36,13 +36,22 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::group(['middleware' => ['auth', 'role:administrator']], function() {
         Route::get('/new_employee', [DashboardController::class,'new_employee']);
         //Route::get('/request_fundsA', \App\Http\Livewire\Admin\RequestFunds::class);
+        //Route::get('/about_us', [DashboardController::class,'about_us']);
+        //Route::get('/view_funds', [DashboardController::class,'view_funds']);//edit_funds/
+        //Route::get('/edit_funds/{id_bu}', \App\Http\Livewire\Admin\EditFunds::class);//edit_funds/
+        //Route::get('/contact_usUs', \App\Http\Livewire\Admin\EditContacts::class);
+
+    });
+    Route::group(['middleware' => ['auth', 'role:administrator|employee']], function() {
+        //Route::get('/new_employee', [DashboardController::class,'new_employee']);
+        //Route::get('/request_fundsA', \App\Http\Livewire\Admin\RequestFunds::class);
         Route::get('/about_us', [DashboardController::class,'about_us']);
         Route::get('/view_funds', [DashboardController::class,'view_funds']);//edit_funds/
         Route::get('/edit_funds/{id_bu}', \App\Http\Livewire\Admin\EditFunds::class);//edit_funds/
         Route::get('/contact_usUs', \App\Http\Livewire\Admin\EditContacts::class);
 
     });
-    Route::group(['middleware' => ['auth', 'role:patient_user|administrator']], function() {
+    Route::group(['middleware' => ['auth', 'role:patient_user|administrator|employee']], function() {
         //Route::get('/new_employee', [DashboardController::class,'new_employee']);
         //Route::get('/request_fundsA', \App\Http\Livewire\Admin\RequestFunds::class);
         Route::get('/about_usUs', [DashboardController::class,'about_usUs']);
