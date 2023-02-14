@@ -14,12 +14,12 @@
             <th class="p-2 whitespace-nowrap">
                 <div class="font-semibold text-left">Amount</div>
             </th>
-            <th class="p-2 whitespace-nowrap">
+            <!--th class="p-2 whitespace-nowrap">
                 <div class="font-semibold text-center">Age</div>
             </th>
             <th class="p-2 whitespace-nowrap">
                 <div class="font-semibold text-center">NIC</div>
-            </th>
+            </th-->
             <th class="p-2 whitespace-nowrap">
                 <div class="font-semibold text-center">Description</div>
             </th>
@@ -42,17 +42,18 @@
                     </div>
                 </td>
                 <td class="p-2 whitespace-nowrap">
-                    <div class="text-left">{{$Fund->email}}</div>
+                    @livewire('admin.progressbar', ['Percentage' => $Collection->get($Fund->id)])
+
                 </td>
                 <td class="p-2 whitespace-nowrap">
                     <div class="text-left font-medium text-green-500">${{$Fund->amount}}</div>
                 </td>
-                <td class="p-2 whitespace-nowrap">
+                <!--td class="p-2 whitespace-nowrap">
                     <div class="text-left">{{$Fund->age}}</div>
                 </td>
                 <td class="p-2 whitespace-nowrap">
                     <div class="text-left">{{$Fund->nic}}</div>
-                </td>
+                </td-->
                 <td class="p-2 whitespace-nowrap">
                     <!-- component -->
                     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -75,7 +76,7 @@
                                     <button wire:click="download({{$Fund->id}},'medical')"  class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
                                         Download Medical Proof
                                     </button>
-                                    <button wire:click="download({{$Fund->id}},'nic')"  class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
+                                    <!--button wire:click="download({{$Fund->id}},'nic')"  class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
                                         Download Nic
                                     </button>
                                     <button wire:click="download({{$Fund->id}},'liveing')"  class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
@@ -83,7 +84,7 @@
                                     </button>
                                     <button wire:click="download({{$Fund->id}},'photos')"  class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
                                         Download Photos
-                                    </button>
+                                    </button-->
                                     <!-- Buttons -->
                                     <div class="text-right space-x-5 mt-5">
                                         <button @click="showModal = !showModal" class="px-4 py-2 text-sm bg-white rounded-xl border transition-colors duration-150 ease-linear border-gray-200 text-gray-500 focus:outline-none focus:ring-0 font-bold hover:bg-gray-50 focus:bg-indigo-50 focus:text-indigo">Cancel</button>
@@ -102,9 +103,9 @@
                         Donate
                     </button>
                     <br>
-                    <button wire:click="download({{$Fund->id}})" class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
+                    <!--button wire:click="download({{$Fund->id}})" class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
                         Download Documents
-                    </button>
+                    </button-->
                 </td>
             </tr>
         @endforeach

@@ -2,14 +2,29 @@
 
 namespace App\Http\Livewire\Guest;
 
+use App\Models\Donations;
 use App\Models\Funds;
 use Livewire\Component;
 
 class Donate extends Component
 {
-    public $Funds;
+    public $Funds,$PErcentage_array,$Collection;
     public function mount(){
         $this->Funds=Funds::where('status','approved')->get();
+        foreach($this->Funds as $Fund){
+            $Tot_donation=0;
+            $Donations=Donations::where('fund_id',$Fund->id)->get();
+            if (!$Donations->isEmpty()){
+                foreach ($Donations as $Donation){
+                    $Tot_donation+=$Donation->amount;
+                }
+                $percentage=($Tot_donation/$Fund->amount)*100;
+                $this->PErcentage_array[strval($Fund->id)]=$percentage;
+            }
+        }
+        $this->Collection=collect($this->PErcentage_array);
+        //dd($this->Collection);
+        //dd($this->PErcentage_array);
     }
     public function download($id_bu,$what){
         //dd($id_bu);
