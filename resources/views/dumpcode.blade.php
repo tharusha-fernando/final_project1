@@ -7390,7 +7390,397 @@ $this->download_file('app/public/'.$file);
                 <x-dashboard.welcome-banner />
                 <x-dashboard.welcome-banner />
                 <x-dashboard.welcome-banner />
-                <x-dashboard.welcome-banner />
+                <x-dashboard.welcome-banner /><label class="block m-auto text-center inline-block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    Funds Required : LKR {{$Funds->amount}} <br>
+                    Funds Recieed : LKR {{$Tot_donations}}
+                </label>
+                <div class="h-3 relative rounded-full overflow-hidden">
+                    <div class="w-full h-full bg-gray-200 absolute"></div>
+                    <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
+                </div><label class="block m-auto text-center inline-block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    Funds Required : LKR {{$Funds->amount}} <br>
+                    Funds Recieed : LKR {{$Tot_donations}}
+                </label>
+                <div class="h-3 relative rounded-full overflow-hidden">
+                    <div class="w-full h-full bg-gray-200 absolute"></div>
+                    <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
+                </div><label class="block m-auto text-center inline-block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    Funds Required : LKR {{$Funds->amount}} <br>
+                    Funds Recieed : LKR {{$Tot_donations}}
+                </label>
+                <div class="h-3 relative rounded-full overflow-hidden">
+                    <div class="w-full h-full bg-gray-200 absolute"></div>
+                    <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
+                </div><label class="block m-auto text-center inline-block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    Funds Required : LKR {{$Funds->amount}} <br>
+                    Funds Recieed : LKR {{$Tot_donations}}
+                </label>
+                <div class="h-3 relative rounded-full overflow-hidden">
+                    <div class="w-full h-full bg-gray-200 absolute"></div>
+                    <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
+                </div><label class="block m-auto text-center inline-block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    Funds Required : LKR {{$Funds->amount}} <br>
+                    Funds Recieed : LKR {{$Tot_donations}}
+                </label>
+                <div class="h-3 relative rounded-full overflow-hidden">
+                    <div class="w-full h-full bg-gray-200 absolute"></div>
+                    <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
+                </div><label class="block m-auto text-center inline-block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    Funds Required : LKR {{$Funds->amount}} <br>
+                    Funds Recieed : LKR {{$Tot_donations}}
+                </label>
+                <div class="h-3 relative rounded-full overflow-hidden">
+                    <div class="w-full h-full bg-gray-200 absolute"></div>
+                    <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
+                </div><label class="block m-auto text-center inline-block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    Funds Required : LKR {{$Funds->amount}} <br>
+                    Funds Recieed : LKR {{$Tot_donations}}
+                </label>
+                <div class="h-3 relative rounded-full overflow-hidden">
+                    <div class="w-full h-full bg-gray-200 absolute"></div>
+                    <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
+                </div><label class="block m-auto text-center inline-block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    Funds Required : LKR {{$Funds->amount}} <br>
+                    Funds Recieed : LKR {{$Tot_donations}}
+                </label>
+                <div class="h-3 relative rounded-full overflow-hidden">
+                    <div class="w-full h-full bg-gray-200 absolute"></div>
+                    <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
+                </div><label class="block m-auto text-center inline-block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    Funds Required : LKR {{$Funds->amount}} <br>
+                    Funds Recieed : LKR {{$Tot_donations}}
+                </label>
+                <div class="h-3 relative rounded-full overflow-hidden">
+                    <div class="w-full h-full bg-gray-200 absolute"></div>
+                    <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
+                </div><label class="block m-auto text-center inline-block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    Funds Required : LKR {{$Funds->amount}} <br>
+                    Funds Recieed : LKR {{$Tot_donations}}
+                </label>
+                <div class="h-3 relative rounded-full overflow-hidden">
+                    <div class="w-full h-full bg-gray-200 absolute"></div>
+                    <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
+                </div><label class="block m-auto text-center inline-block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    Funds Required : LKR {{$Funds->amount}} <br>
+                    Funds Recieed : LKR {{$Tot_donations}}
+                </label>
+                <div class="h-3 relative rounded-full overflow-hidden">
+                    <div class="w-full h-full bg-gray-200 absolute"></div>
+                    <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
+                </div><label class="block m-auto text-center inline-block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    Funds Required : LKR {{$Funds->amount}} <br>
+                    Funds Recieed : LKR {{$Tot_donations}}
+                </label>
+                <div class="h-3 relative rounded-full overflow-hidden">
+                    <div class="w-full h-full bg-gray-200 absolute"></div>
+                    <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div><div class="mb-4">
+
+
+                    <script>
+                        let progress = 0;
+                        let invervalSpeed = 10;
+                        let incrementSpeed = 1;
+                        document.addEventListener("DOMContentLoaded", function(){
+                            let bar = document.getElementById('bar');
+                            progressInterval = setInterval(function(){
+                                progress += incrementSpeed;
+                                bar.style.width = progress + "%";
+                                if(progress >= {{$percentage}}){
+                                    clearInterval(progressInterval);
+                                }
+                            }, invervalSpeed);
+                        });
+                    </script>
+                </div>
                 <x-dashboard.welcome-banner />
                 <x-dashboard.welcome-banner />
                 <x-dashboard.welcome-banner />

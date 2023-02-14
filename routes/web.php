@@ -21,6 +21,8 @@ Route::get('/about_usgu', [DashboardController::class,'about_usgu']);
 Route::get('/donate', [DashboardController::class,'donate']);
 Route::get('/donation/{id}', [DashboardController::class,'donation']);
 Route::get('/contact_us', [DashboardController::class,'contact_us']);
+Route::get('/buyAcofeeusUs', [DashboardController::class,'buyA']);
+
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 

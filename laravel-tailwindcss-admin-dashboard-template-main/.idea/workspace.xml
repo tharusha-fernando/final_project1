@@ -14,6 +14,9 @@
   <component name="DarkyenusTimeTracker">
     <option name="totalTimeSeconds" value="423" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
@@ -137,6 +140,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="2LFvM7i0UjBp9ZoTQCSl667pDPE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -165,6 +169,7 @@
       <updated>1675479595774</updated>
       <workItem from="1675479598460" duration="737000" />
       <workItem from="1675920241859" duration="632000" />
+      <workItem from="1676370286074" duration="87000" />
     </task>
     <servers />
   </component>

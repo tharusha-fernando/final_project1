@@ -96,6 +96,9 @@
             //return view('guest/dashboard', compact('dataFeed'));
         }
 
+        public function buyA(){
+            return view('guest/buyA');
+        }
         public function view_funds(){
             $Funds=Funds::where('status','approved')->get();
             $Donations=Donations::all();
