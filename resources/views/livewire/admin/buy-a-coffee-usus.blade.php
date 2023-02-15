@@ -40,7 +40,7 @@
                             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                                 Bank
                             </label>
-                            <input wire:model="bank" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="First Name">
+                            <input wire:model="bank" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Bank">
                             <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
                         </div>
 
@@ -48,7 +48,7 @@
                             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                                 Branch
                             </label>
-                            <input wire:model="branch" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Last Name">
+                            <input wire:model="branch" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Branch">
                             <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
                         </div>
 
@@ -68,7 +68,7 @@
                             <button class="bg-emerald-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="submit">
                                 Submit
                             </button>
-                            <button class="bg-gray-500 hover:bg-gray-50 text-white font-bold py-2 px-4 rounded-full" type="reset">
+                            <button class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" type="reset">
                                 Cancel
                             </button>
                         </div>
@@ -107,7 +107,7 @@
                             <button class="bg-emerald-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="submit">
                                 Submit
                             </button>
-                            <button class="bg-gray-500 hover:bg-gray-50 text-white font-bold py-2 px-4 rounded-full" type="reset">
+                            <button class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" type="reset">
                                 Cancel
                             </button>
                         </div>
@@ -147,7 +147,7 @@
                             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                                 Phone Number
                             </label>
-                            <input wire:model="Phone_numb" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Last Name">
+                            <input wire:model="Phone_numb" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Phone Number">
                             <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
                         </div>
                         <div class="w-full  px-3 mb-6 md:mb-0">
@@ -175,7 +175,7 @@
                             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                                 Email
                             </label>
-                            <input wire:model="email_cp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Last Name">
+                            <input wire:model="email_cp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Email">
                             <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
                         </div>
                         <div class="w-full  px-3 mb-6 md:mb-0">
@@ -209,7 +209,7 @@
                             <button class="bg-emerald-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="submit">
                                 Submit
                             </button>
-                            <button class="bg-gray-500 hover:bg-gray-50 text-white font-bold py-2 px-4 rounded-full" type="reset">
+                            <button class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" type="reset">
                                 Cancel
                             </button>
                         </div>
