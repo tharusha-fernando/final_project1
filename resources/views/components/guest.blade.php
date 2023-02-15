@@ -15,6 +15,13 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <style>
+        body {
+            background-image: url({{ asset('images/background.jpg') }});
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body
     class="font-inter antialiased bg-slate-100 text-slate-600"
