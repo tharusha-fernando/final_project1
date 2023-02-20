@@ -30,7 +30,8 @@
                 $dataFeed = new DataFeed();
                 $Data=\App\Models\AboutUs::all()->first();
                 $imageurl='storage/'.$Data->image_path;
-                return view('user/about_us', compact('dataFeed','Data','imageurl'));
+                return view('admin/dashboard', compact('dataFeed'));
+                //return view('user/about_us', compact('dataFeed','Data','imageurl'));
             }elseif (Auth::user()->hasRole('employee')){
                 return view('admin/dashboard', compact('dataFeed'));
             }

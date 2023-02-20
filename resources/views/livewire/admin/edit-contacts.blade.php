@@ -3,6 +3,8 @@
     <div>
         {{-- The whole world belongs to you. --}}
         <div class="col-span-full  bg-white shadow-lg rounded-sm border border-gray-200">
+
+        <div class="col-span-full  bg-white shadow-lg rounded-sm border border-gray-200">
         <header class="px-5 py-4 border-b border-gray-100">
             <h2 class="font-semibold text-gray-800">Contact Us</h2>
         </header>
@@ -89,6 +91,7 @@
 
             </div>
 
+        </div>
         </div>
         </div>
     </div>

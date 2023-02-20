@@ -49,6 +49,8 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         Route::get('/view_funds', [DashboardController::class,'view_funds']);//edit_funds/
         Route::get('/edit_funds/{id_bu}', \App\Http\Livewire\Admin\EditFunds::class);//edit_funds/
         Route::get('/contact_usUs', \App\Http\Livewire\Admin\EditContacts::class);
+        Route::get('/view_BuyAcoffee',  App\Http\Livewire\Admin\ViewBuyacoffee::class);
+
 
     });
     Route::group(['middleware' => ['auth', 'role:patient_user|administrator|employee']], function() {
