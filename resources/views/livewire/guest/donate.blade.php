@@ -54,7 +54,7 @@
                 <td class="p-2 whitespace-nowrap">
                     <div class="text-left">{{$Fund->nic}}</div>
                 </td-->
-                <td class="p-2 whitespace-nowrap">
+                <td class="p-2 flex">
                     <!-- component -->
                     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
@@ -65,12 +65,13 @@
                             <!-- Button -->
                             <button @click="showModal = !showModal" class="px-4 py-2 text-white bg-indigo-600 rounded-xl border transition-colors duration-150 ease-linear border-gray-200 text-gray-500 focus:outline-none focus:ring-0 font-bold focus:bg-indigo-50 focus:text-indigo">View Description</button>
 
-                            <!-- Modal Background -->
                             <div x-show="showModal" class="fixed text-gray-500 flex items-center justify-center overflow-auto z-50 bg-black bg-opacity-40 left-0 right-0 top-0 bottom-0" x-transition:enter="transition ease duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
                                 <!-- Modal -->
-                                <div x-show="showModal" class="bg-white border-2 rounded-xl shadow-2xl p-6 sm:w-10/12 mx-10" @click.away="showModal = false" x-transition:enter="transition ease duration-100 transform" x-transition:enter-start="opacity-0 scale-90 translate-y-1" x-transition:enter-end="opacity-100 scale-100 translate-y-0" x-transition:leave="transition ease duration-100 transform" x-transition:leave-start="opacity-100 scale-100 translate-y-0" x-transition:leave-end="opacity-0 scale-90 translate-y-1">
+                                <div x-show="showModal" class="bg-white border-2 rounded-xl overflow-y-auto shadow-2xl p-6 sm:w-10/12 mx-10" @click.away="showModal = false" x-transition:enter="transition ease duration-100 transform" x-transition:enter-start="opacity-0 scale-90 translate-y-1" x-transition:enter-end="opacity-100 scale-100 translate-y-0" x-transition:leave="transition ease duration-100 transform" x-transition:leave-start="opacity-100 scale-100 translate-y-0" x-transition:leave-end="opacity-0 scale-90 translate-y-1">
                                     <!-- Title -->
-                                    <p>
+                                    <b>Email : </b>{{$Fund->email}} <br>
+                                    <b>NIC : </b>{{$Fund->nic}}<br>
+                                    <p class="break-words">
                                         <b>Description : </b>{{$Fund->description}}
                                     </p><br>
                                     <button wire:click="download({{$Fund->id}},'medical')"  class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
