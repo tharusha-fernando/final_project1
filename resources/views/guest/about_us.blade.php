@@ -57,7 +57,7 @@
                       <p>{{$Data->vision}}</p>
                             </td>
                             <td class="p-2 whitespace">
-                                <h2 class="text-lg font-semibold text-slate-800 mb-2">Our Achievemnets</h2>
+                                <h2 class="text-lg font-semibold text-slate-800 mb-2">Our Achievements</h2>
                                 <p>{{$Data->our_achievmnets}}</p>
                             </td>
                         </tr>
