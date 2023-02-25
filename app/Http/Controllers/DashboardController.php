@@ -46,7 +46,11 @@
 
         public function about_us(){
             $dataFeed = new DataFeed();
-            return view('admin/about_us', compact('dataFeed'));
+            if (Auth::user()->hasRole('administrator')){
+                return view('admin/about_us', compact('dataFeed'));
+            }else{
+                return redirect('/about_usgu');
+            }
         }
 
         public function about_usUs(){

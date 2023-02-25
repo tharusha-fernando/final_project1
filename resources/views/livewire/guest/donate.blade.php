@@ -46,7 +46,7 @@
 
                 </td>
                 <td class="p-2 whitespace-nowrap">
-                    <div class="text-left font-medium text-green-500">${{$Fund->amount}}</div>
+                    <div class="text-left font-medium text-green-500">LKR {{$Fund->amount}}</div>
                 </td>
                 <!--td class="p-2 whitespace-nowrap">
                     <div class="text-left">{{$Fund->age}}</div>
