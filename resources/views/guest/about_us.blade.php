@@ -44,12 +44,13 @@
                             <td class="p-2">
                                 <h2 class="text-lg font-semibold text-slate-800 mb-2">About Us</h2>
                                 <!--div class="text-xs font-semibold text-slate-400 uppercase mb-1">Sales</div-->
-                                <p>{{$Data->about_us}}</p>
+                                <p class="flex justify-between" style="text-align: justify">{{$Data->about_us}} ssdsdsds</p>
                             </td>
                             <td class="p-2 whitespace-nowrap">
                                 <img src="{{asset($imageurl)}}" width="400" height="400" />
                             </td>
                         </tr>
+
                         <tr>
                             <td class="p-2 whitespace">
                                 <h2 class="text-lg font-semibold text-slate-800 mb-2">Vision</h2>

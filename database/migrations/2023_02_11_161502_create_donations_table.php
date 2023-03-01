@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('doner_details')->nullable();
             $table->string('payment_method');
             $table->unsignedBigInteger('fund_id');
-            $table->foreign('fund_id')->references('id')->on('funds');
+            $table->foreign('fund_id')->references('id')->on('funds')->onDelete('cascade');
             $table->timestamps();
         });
     }
