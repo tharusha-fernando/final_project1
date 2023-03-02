@@ -1,10 +1,13 @@
 <div>
     {{-- The Master doesn't talk, he acts. --}}
     <div class="mb-4">
-        <label class="block m-auto text-center inline-block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-            Funds Required : LKR {{$Funds->amount}} <br>
-            Funds Recieed : LKR {{$Tot_donations}}
-        </label>
+        <div class="text-center">
+            <label class="block m-auto uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                Funds Required : LKR {{$Funds->amount}} <br>
+                Funds Received : LKR {{$Tot_donations}}
+            </label>
+        </div>
+
         <div class="h-3 relative rounded-full overflow-hidden">
             <div class="w-full h-full bg-gray-200 absolute"></div>
             <div id="bar" class="h-full bg-emerald-500 relative w-0"></div>
@@ -28,7 +31,13 @@
     </div>
     <div class="col-span-full xl:col-span-6 bg-white shadow-lg rounded-sm border border-gray-200">
         @if($paymentstatus=='first')
-            <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+            <dl class=" text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                <div class="flex flex-col pt-3">
+
+                    <button wire:click="approve('crdp')" class="bg-indigo-600 mb-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                        Transfer Money <!--With Courier--> Through Credit/Debit Card
+                    </button>
+                </div>
                 <div class="flex flex-col pb-3">
                     <button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
                         Transfer Money With A Bank Deposit
@@ -43,12 +52,6 @@
 
                     <button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
                         Transfer Money With Courier Pickup
-                    </button>
-                </div>
-                <div class="flex flex-col pt-3">
-
-                    <button wire:click="approve('crdp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
-                        Transfer Money With Courier Through Credit Debit Card
                     </button>
                 </div>
             </dl>

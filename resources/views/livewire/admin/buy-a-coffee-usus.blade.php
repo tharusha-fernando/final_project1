@@ -5,30 +5,30 @@
         <header class="px-5 py-4 border-b border-gray-100">
             <h1 class="font-semibold text-gray-800">Buy A Coffee</h1>
         </header>`
-        <div class="col-span-full xl:col-span-6 bg-white shadow-lg rounded-sm border border-gray-200">
+        <div class="col-span-full bg-white shadow-lg rounded-sm border border-gray-200">
 
             @if($paymentstatus=='first')
-                <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                <dl class=" text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                    <div class="flex flex-col pt-3">
+
+                        <button wire:click="approve('crdp')" class="bg-indigo-600 mb-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                            Transfer Money <!--With Courier--> Through Credit/Debit Card
+                        </button>
+                    </div>
                     <div class="flex flex-col pb-3">
-                        <button wire:click="approve('dp')" class="bg-indigo-600 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                        <button wire:click="approve('dp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
                             Transfer Money With A Bank Deposit
                         </button>
                     </div>
                     <div class="flex flex-col py-3">
-                        <button wire:click="approve('pp')" class="bg-indigo-600 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                        <button wire:click="approve('pp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
                             Transfer Money With PayPal
                         </button>
                     </div>
                     <div class="flex flex-col pt-3">
 
-                        <button wire:click="approve('cp')" class="bg-indigo-600 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
+                        <button wire:click="approve('cp')" class="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
                             Transfer Money With Courier Pickup
-                        </button>
-                    </div>
-                    <div class="flex flex-col pt-3">
-
-                        <button wire:click="approve('crdp')" class="bg-indigo-600 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
-                            Transfer Money With Courier Through Credit Debit Card
                         </button>
                     </div>
                 </dl>
