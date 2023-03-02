@@ -3,7 +3,7 @@
     <div class="mb-4">
         <div class="text-center">
             <label class="block m-auto uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                Funds Required : LKR {{$Funds->amount}} <br>
+                Funds Required : LKR {{$Funds->amount}} <br><!--dhbfdfhuijfdsfdj-->
                 Funds Received : LKR {{$Tot_donations}}
             </label>
         </div>
