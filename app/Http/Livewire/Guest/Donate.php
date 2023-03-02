@@ -18,7 +18,7 @@ class Donate extends Component
                 foreach ($Donations as $Donation){
                     $Tot_donation+=$Donation->amount;
                 }
-                $percentage=($Tot_donation/$Fund->amount)*100;
+                $percentage=intval(($Tot_donation/$Fund->amount)*100);
                 $this->PErcentage_array[strval($Fund->id)]=$percentage;
             }
         }
