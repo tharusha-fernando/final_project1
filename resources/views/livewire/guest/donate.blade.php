@@ -72,7 +72,7 @@
                                     <b>Email : </b>{{$Fund->email}} <br>
                                     <b>NIC : </b>{{$Fund->nic}}<br>
                                     <p class="break-words">
-                                        <b>Description : </b>{{$Fund->description}}
+                                        <b>Description : </b>{!! nl2br($Fund->description) !!}
                                     </p><br>
                                     <button wire:click="download({{$Fund->id}},'medical')"  class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" >
                                         Download Medical Proof

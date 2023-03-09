@@ -30,6 +30,14 @@ class Donation extends Component
         //dd($this->paymentstatus);
     }//Add_donation
     public function pay_crdp(){
+        $validatedData = $this->validate([
+            'amount_crdt'=> 'required',
+            'nameonthecard'=> 'required',
+            'exp_date'=>'required',
+            'csv'=>'required',
+            //'csv'=>'required',
+
+        ]);
         $Donation=new Donations();
         $Donation->amount=$this->amount_crdt;
         $Donation->doner_name=$this->nameonthecard;
@@ -42,6 +50,13 @@ class Donation extends Component
     }
 
     public function cp_pay(){
+        $validatedData = $this->validate([
+            'amount_cp'=> 'required',
+            'name_cp'=> 'required',
+            'cp_type'=>'required',
+            //'our_achivemnetns'=>'required',
+
+        ]);
         $Donation=new Donations();
         $Donation->amount=$this->amount_cp;
         $Donation->doner_name=$this->name_cp;
@@ -52,6 +67,13 @@ class Donation extends Component
         return $this->redirect('/donation/'.$this->id_buba);
     }
     public function paypal_payment(){
+        //$validatedData = $this->validate([
+           // 'amount_cp'=> 'required',
+            //'name_cp'=> 'required',
+            //'doc_upload'=>'required',
+            //'our_achivemnetns'=>'required',
+
+        //]);
         $Donation=new Donations();
         $Donation->amount=$this->amount_pp;
         $Donation->doner_name=$this->email_pp;

@@ -54,57 +54,57 @@
             </dl>
 
         @elseif($paymentstatus=='dp')
-           <div >
-               <form wire:submit.prevent="dp_pay">
-                   <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                           Bank
-                       </label>
-                       <input wire:model="bank" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Bank">
-                       <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
-                   </div>
+            <div >
+                <form wire:submit.prevent="dp_pay">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Bank
+                        </label>
+                        <input wire:model="bank" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Bank" required>
+                        <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
+                    </div>
 
-                   <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                           Branch
-                       </label>
-                       <input wire:model="branch" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Branch">
-                       <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
-                   </div>
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Branch
+                        </label>
+                        <input wire:model="branch" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Branch" required>
+                        <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
+                    </div>
 
-                   <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                           Account Number
-                       </label>
-                       <input wire:model="account_numb" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="number" placeholder="Account">
-                       <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
-                   </div>
-                   <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                           Amount
-                       </label>
-                       <input wire:model="amount_" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="number" placeholder="Amount">
-                       <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
-                       <button class="bg-emerald-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="submit">
-                           Submit
-                       </button>
-                       <button class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" type="reset">
-                           Cancel
-                       </button>
-                   </div>
-                   <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                           Please Send The Reciept To Our Email Address Or Call And Inform Us
-                       </label>
-                       <p>
-                           E-mail : SuwasethaD@Gmail.com</p>
-                       <p>
-                           HotLine : 07156200
-                       </p>
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Account Number
+                        </label>
+                        <input wire:model="account_numb" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="number" placeholder="Account" required>
+                        <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
+                    </div>
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Amount
+                        </label>
+                        <input wire:model="amount_" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="number" placeholder="Amount" required>
+                        <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
+                        <button class="bg-emerald-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="submit">
+                            Submit
+                        </button>
+                        <button class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" type="reset">
+                            Cancel
+                        </button>
+                    </div>
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Please Send The Reciept To Our Email Address Or Call And Inform Us
+                        </label>
+                        <p>
+                            E-mail : SuwasethaD@Gmail.com</p>
+                        <p>
+                            HotLine : 07156200
+                        </p>
 
-                   </div>
-               </form>
-           </div>
+                    </div>
+                </form>
+            </div>
 
         @elseif($paymentstatus=='pp')
             <div >
@@ -113,7 +113,7 @@
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                             Email Address
                         </label>
-                        <input wire:model="email_pp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Email">
+                        <input wire:model="email_pp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Email" required>
                         <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
                     </div>
 
@@ -122,7 +122,7 @@
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                             Amount
                         </label>
-                        <input wire:model="amount_pp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="number" placeholder="Amount">
+                        <input wire:model="amount_pp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="number" placeholder="Amount" required>
                         <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
                         <button class="bg-emerald-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="submit">
                             Submit
@@ -151,7 +151,7 @@
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                             Name
                         </label>
-                        <input wire:model="name_cp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="First Name">
+                        <input wire:model="name_cp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="First Name" required>
                         <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
                     </div>
 
@@ -159,7 +159,7 @@
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                             Home Address
                         </label>
-                        <input wire:model="address_cp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Last Name">
+                        <input wire:model="address_cp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Last Name" required>
                         <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
                     </div>
 
@@ -167,21 +167,21 @@
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                             Phone Number
                         </label>
-                        <input wire:model="Phone_numb" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Phone Number">
+                        <input wire:model="Phone_numb" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Phone Number" required>
                         <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
                     </div>
                     <div class="w-full  px-3 mb-6 md:mb-0">
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                             City
                         </label>
-                        <input wire:model="city_cp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="City">
+                        <input wire:model="city_cp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="City" required>
 
                     </div>
                     <div class="w-full  px-3 mb-6 md:mb-0">
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                             Amount
                         </label>
-                        <input wire:model="amount_cp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="number" placeholder="Amount">
+                        <input wire:model="amount_cp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="number" placeholder="Amount" required>
 
                     </div>
                     <!--div class="w-full px-3 mb-6 md:mb-0">
@@ -195,7 +195,7 @@
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                             Email
                         </label>
-                        <input wire:model="email_cp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Email">
+                        <input wire:model="email_cp" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Email" required>
                         <!--p class="text-red-500 text-xs italic">Please fill out this field.</p-->
                     </div>
                     <div class="w-full  px-3 mb-6 md:mb-0">
@@ -226,7 +226,7 @@
                         </div>
                     </div>
                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                       <button class="bg-emerald-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="submit">
+                        <button class="bg-emerald-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="submit">
                             Submit
                         </button>
                         <button class="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full" type="reset">
@@ -234,80 +234,80 @@
                         </button>
                     </div>
                 </form>
-            </div>
-        @elseif($paymentstatus=='crdp')
-            <form class="bg-white p-6 rounded-lg" wire:submit.prevent="pay_crdp">
-                <div class="mb-4">
-                    <label class="block font-bold mb-2 text-gray-700" for="card-number">
-                        Card Number
-                    </label>
-                    <input
-                        class="border border-gray-400 p-2 w-full"
-                        id="card-number"
-                        type="text"
-                        wire:model="card_numb"
-                        required
-                    >
-                </div>
-                <div class="mb-4">
-                    <label class="block font-bold mb-2 text-gray-700" for="name-on-card">
-                        Name on Card
-                    </label>
-                    <input
-                        class="border border-gray-400 p-2 w-full"
-                        id="name-on-card"
-                        type="text"
-                        wire:model="nameonthecard"
-                        required
-                    >
-                </div>
-                <div class="mb-4">
-                    <label class="block font-bold mb-2 text-gray-700" for="expiry-date">
-                        Expiry Date
-                    </label>
-                    <input
-                        class="border border-gray-400 p-2 w-full"
-                        id="expiry-date"
-                        type="month"
-                        wire:model="exp_date"
-                        required
-                    >
-                </div>
-                <div class="mb-4">
-                    <label class="block font-bold mb-2 text-gray-700" for="cvv">
-                        CVV
-                    </label>
-                    <input
-                        class="border border-gray-400 p-2 w-full"
-                        id="cvv"
-                        type="text"
-                        wire:model="csv"
-                        required
-                    >
-                </div>
-                <div class="mb-4">
-                    <label class="block font-bold mb-2 text-gray-700" for="name-on-card">
-                        Amount
-                    </label>
-                    <input
-                        class="border border-gray-400 p-2 w-full"
-                        id="name-on-card"
-                        type="number"
-                        wire:model="amount_crdt"
-                        required
-                    >
-                </div>
-                <div class="mb-6 text-center">
-                    <button
-                        class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded"
-                        type="submit"
-                    >
-                        Submit
-                    </button>
-                </div>
-            </form>
-
-
-        @endif
     </div>
+    @elseif($paymentstatus=='crdp')
+        <form class="bg-white p-6 rounded-lg" wire:submit.prevent="pay_crdp">
+            <div class="mb-4">
+                <label class="block font-bold mb-2 text-gray-700" for="card-number">
+                    Card Number
+                </label>
+                <input
+                    class="border border-gray-400 p-2 w-full"
+                    id="card-number"
+                    type="text"
+                    wire:model="card_numb"
+                    required
+                >
+            </div>
+            <div class="mb-4">
+                <label class="block font-bold mb-2 text-gray-700" for="name-on-card">
+                    Name on Card
+                </label>
+                <input
+                    class="border border-gray-400 p-2 w-full"
+                    id="name-on-card"
+                    type="text"
+                    wire:model="nameonthecard"
+                    required
+                >
+            </div>
+            <div class="mb-4">
+                <label class="block font-bold mb-2 text-gray-700" for="expiry-date">
+                    Expiry Date
+                </label>
+                <input
+                    class="border border-gray-400 p-2 w-full"
+                    id="expiry-date"
+                    type="month"
+                    wire:model="exp_date"
+                    required
+                >
+            </div>
+            <div class="mb-4">
+                <label class="block font-bold mb-2 text-gray-700" for="cvv">
+                    CVV
+                </label>
+                <input
+                    class="border border-gray-400 p-2 w-full"
+                    id="cvv"
+                    type="text"
+                    wire:model="csv"
+                    required
+                >
+            </div>
+            <div class="mb-4">
+                <label class="block font-bold mb-2 text-gray-700" for="name-on-card">
+                    Amount
+                </label>
+                <input
+                    class="border border-gray-400 p-2 w-full"
+                    id="name-on-card"
+                    type="number"
+                    wire:model="amount_crdt"
+                    required
+                >
+            </div>
+            <div class="mb-6 text-center">
+                <button
+                    class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded"
+                    type="submit"
+                >
+                    Submit
+                </button>
+            </div>
+        </form>
+
+
+    @endif
+</div>
 </div>
