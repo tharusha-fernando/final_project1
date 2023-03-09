@@ -440,7 +440,7 @@
                                     <path class="fill-current @if(in_array(Request::segment(1), ['campaigns'])){{ 'text-indigo-300' }}@else{{ 'text-slate-400' }}@endif" d="M17 23a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 010-2 4 4 0 004-4 1 1 0 012 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1zM7 13a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 110-2 4 4 0 004-4 1 1 0 112 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1z" />
                                 </svg-->
                                     <a href="/buyAcofeeusUs" class="bg-white hover:bg-gray-200 text-black font-medium py-2 px-4 rounded-full">
-                                        Buy a Coffee
+                                        Support Our Team
                                     </a>
                                 <!--button class="bg-white hover:bg-gray-200 text-black font-medium py-2 px-4 rounded-full">
                                     Buy a Coffee

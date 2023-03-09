@@ -3,7 +3,7 @@
     <div>
         {{-- The Master doesn't talk, he acts. --}}
         <header class="px-5 py-4 border-b border-gray-100">
-            <h1 class="font-semibold text-gray-800">Buy A Coffee</h1>
+            <h1 class="font-semibold text-gray-800">Support Our Team - You Can Support Now For Maintain Our System</h1>
         </header>`
         <div class="col-span-full bg-white shadow-lg rounded-sm border border-gray-200">
 
