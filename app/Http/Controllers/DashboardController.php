@@ -119,11 +119,11 @@
             foreach ($Funds as $Fund){
                 if ($Fund->type=='Operation'){
                     $totalOP_req+=$Fund->amount;
-                }elseif ($Fund->type='Medical_Equipment'){
+                }elseif ($Fund->type=='Medical_Equipment'){
                     $totalMeq_req+=$Fund->amount;
-                }elseif ($Fund->type='Medicine'){
+                }elseif ($Fund->type=='Medicine'){
                     $totalMed_req+=$Fund->amount;
-                }elseif ($Fund->type='Other'){
+                }elseif ($Fund->type=='Other'){
                     $totalOt_req+=$Fund->amount;
                 }
                 //$total_req=+$Fund->amount;
